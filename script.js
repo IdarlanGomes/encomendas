@@ -58,5 +58,5 @@ function enviar(){
 
     window.open('https://api.whatsapp.com/send?phone=5562982714110&text=' + "Olá, gostaria de fazer uma *ENCOMENDA*! " + document.getElementById("selecionado").value + " " + document.getElementById("selecionado2").value + " " + document.getElementById("selecionado3").value + " " + document.getElementById("selecionado4").value +'', '_blank');
     
-    //alert(document.getElementById("selecionado4").value + "\n" + document.getElementById("selecionado3").value + "\n" + document.getElementById("selecionado2").value + "\n" + document.getElementById("selecionado").value) //ISSO FUNCIONA!!!!!!!
+    //alert(document.getElementById("selecionado4").value + "\n" + document.getElementById("selecionado3").value + "\n" + document.getElementById("selecionado2").value + "\n" + document.getElementById("selecionado").value) //ISSO FUNCIONA!
 }
