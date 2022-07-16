@@ -7,7 +7,7 @@ function update(){
 let massa = document.getElementById("massa");   
 let opcao = massa.options[massa.selectedIndex];
 
-document.getElementById("selecionado").value = "Massa: " + opcao.text + ".";
+document.getElementById("selecionado").value = "*MASSA*: " + opcao.text + ".";
 }
 update();
 
@@ -20,7 +20,7 @@ function update2(){
 let recheio = document.getElementById("recheio");   
 let opcao2 = recheio.options[recheio.selectedIndex];
 
-document.getElementById("selecionado2").value = "Recheio: " + opcao2.text + ".";
+document.getElementById("selecionado2").value = "*RECHEIO*: " + opcao2.text + ".";
 }
 update2();
 
@@ -33,7 +33,7 @@ function update3(){
 let cobertura = document.getElementById("cobertura");   
 let opcao3 = cobertura.options[cobertura.selectedIndex];
 
-document.getElementById("selecionado3").value = "Cobertura: " + opcao3.text + ".";
+document.getElementById("selecionado3").value = "*COBERTURA*: " + opcao3.text + ".";
 }
 update3();
 
@@ -46,7 +46,7 @@ function update4(){
 let decoração = document.getElementById("decoração");   
 let opcao4 = decoração.options[decoração.selectedIndex];
 
-document.getElementById("selecionado4").value = "Decoração: " + opcao4.text + ".";
+document.getElementById("selecionado4").value = "*DECORAÇÃO*: " + opcao4.text + ".";
 }
 update4();
 
@@ -56,6 +56,7 @@ document.getElementById("btn").onclick = function(){enviar()};
 
 function enviar(){
 
-    location.href='https://api.whatsapp.com/send?phone=5562982714110&text=' + document.getElementById("selecionado4").value + "\n" + document.getElementById("selecionado3").value + "\n" + document.getElementById("selecionado2").value + "\n" + document.getElementById("selecionado").value +''
+    window.open('https://api.whatsapp.com/send?phone=5562982714110&text=' + "Olá, gostaria de fazer uma *ENCOMENDA*! " + document.getElementById("selecionado").value + " " + document.getElementById("selecionado2").value + " " + document.getElementById("selecionado3").value + " " + document.getElementById("selecionado4").value +'', '_blank');
+    
     //alert(document.getElementById("selecionado4").value + "\n" + document.getElementById("selecionado3").value + "\n" + document.getElementById("selecionado2").value + "\n" + document.getElementById("selecionado").value) //ISSO FUNCIONA!!!!!!!
 }

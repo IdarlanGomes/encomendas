@@ -1,3 +1,39 @@
+body{
+    background-color: rgba(61, 13, 1, 0.957);
+}
+
+.container0{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: pink;
+    position: unset;
+    
+
+}
+
+.menu{
+    
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: pink;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.478);
+}
+
+.resumo{
+    
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: pink;
+}
+
 input{
     width: 300px;
     color: brown;
@@ -9,17 +45,33 @@ input{
     
 }
 
+.botao{
+    
+    display: flex;
+    justify-content: center;
+}
+
 #btn{
-    margin-top: 10px;
-    padding: 10px;
+    margin: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
     background-color:green;
     color: white;
-    border-radius: 10px;
-    
+    border-radius: 10px;    
     box-shadow: 2px 2px black;
+    align-items: center;
+   
 
 }
 
 #btn:hover{
     background-color: rgb(255, 102, 0);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
 }

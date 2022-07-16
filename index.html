@@ -8,37 +8,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="container0">
+            <div class="imgl">
+         <img src="img/logo3.png" alt="logo">
+            </div>
+            
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Fotos</a>
+                <a href="#">Quem sou</a>
+                <a href="#">Contato</a>
+            </nav>
+        </img> 
+    </header>
+    
+    <main>
+        <div class="menu">
     <h1>Bolos & Tortas 🥳</h1>
+
     <p>Selecione a massa do bolo:</p>
+
     <select name="massa" id="massa"> <!--getElementByid-->
+
         <option value="valor1">Pão de ló tradicional</option>
         <option value="valor2">Pão de ló de chocolate</option>
+
     </select>
     
     <p>Selecione o recheio do bolo:</p>
+
     <select name="recheio" id="recheio">
+
         <option value="valor3">Morango</option>
         <option value="valor4">Chocolate</option>
         <option value="valor5">Abacaxi com coco</option>
         <option value="valor6">Ninho com Morango</option>
         <option value="valor7">Brigadeiro</option>
+
     </select>
+
     <p>Selecione a cobertura do bolo:</p>
+
     <select name="cobertura" id="cobertura">
+
         <option value="valor8">Chocolate</option>
         <option value="valor9">Morango</option>
         <option value="valor10">Chantininho</option>
         <option value="valor11">Ganache</option>
 
     </select>
+
     <p>Selecione a decoração do bolo:</p>
+
     <select name="decoração" id="decoração">
+
         <option value="valor12">Flores naturais</option>
         <option value="valor13">Topo personalizado</option>
         <option value="valor14">Decoração lisa</option>
         <option value="valor15">Decoração com ondas</option>
+
     </select>
-    <h2>Seu pedido:</h2>
+
+</div>
+
+    <div class="resumo">
+    <h2>Resumo:</h2>
+
     <input disabled type="text" id="selecionado"></input>
     <br>
     <input disabled type="text" id="selecionado2"></input>
@@ -46,8 +82,24 @@
     <input disabled type="text" id="selecionado3"></input>
     <br>
     <input disabled type="text" id="selecionado4"></input>
+</div>
+
     <br>
-    <button id="btn">Enviar</button>
+
+    <div class="botao">
+        <button id="btn">Enviar Pedido</button>
+    </div>
+
+    </main>
+
+    <footer>
+        <p>Dúvidas?! Entre em contato já! WhatsApp: (62) 98271-4110 | E-mail: deliciasdarahgo@gmail.com </p>      <p> </p>
+        <p></p>
+        <p></p>
+        <p></p>      
+    </footer>
+
     <script src="script.js"></script>
+
 </body>
 </html>
