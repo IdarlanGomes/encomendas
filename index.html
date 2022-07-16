@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça sua Encomenda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bolos & Tortas 🥳</h1>
+    <p>Selecione a massa do bolo:</p>
+    <select name="massa" id="massa"> <!--getElementByid-->
+        <option value="valor1">Pão de ló tradicional</option>
+        <option value="valor2">Pão de ló de chocolate</option>
+    </select>
+    
+    <p>Selecione o recheio do bolo:</p>
+    <select name="recheio" id="recheio">
+        <option value="valor3">Morango</option>
+        <option value="valor4">Chocolate</option>
+        <option value="valor5">Abacaxi com coco</option>
+        <option value="valor6">Ninho com Morango</option>
+        <option value="valor7">Brigadeiro</option>
+    </select>
+    <p>Selecione a cobertura do bolo:</p>
+    <select name="cobertura" id="cobertura">
+        <option value="valor8">Chocolate</option>
+        <option value="valor9">Morango</option>
+        <option value="valor10">Chantininho</option>
+        <option value="valor11">Ganache</option>
+
+    </select>
+    <p>Selecione a decoração do bolo:</p>
+    <select name="decoração" id="decoração">
+        <option value="valor12">Flores naturais</option>
+        <option value="valor13">Topo personalizado</option>
+        <option value="valor14">Decoração lisa</option>
+        <option value="valor15">Decoração com ondas</option>
+    </select>
+    <h2>Seu pedido:</h2>
+    <input disabled type="text" id="selecionado"></input>
+    <br>
+    <input disabled type="text" id="selecionado2"></input>
+    <br>
+    <input disabled type="text" id="selecionado3"></input>
+    <br>
+    <input disabled type="text" id="selecionado4"></input>
+    <br>
+    <button id="btn">Enviar</button>
+    <script src="script.js"></script>
+</body>
+</html>
