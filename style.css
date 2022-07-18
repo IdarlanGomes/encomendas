@@ -1,6 +1,12 @@
+
+
 @import url('https://fonts.googleapis.com/css2? family= Aberto+Sans:wght@300 &family= ZCOOL+QingKe+HuangYou & display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    margin: 0px; padding: 0; box-sizing: border-box;
+}
 
 body{/*
     background-color: rgba(61, 13, 1, 0.957);*/
@@ -10,8 +16,23 @@ body{/*
         animation: gradient 15s ease infinite;
         height: 100vh;
         font-family: 'Open Sans', sans-serif;
+
         
     }
+
+body::-webkit-scrollbar{
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track{
+    background: rgba(165, 42, 42, 0);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: pink;
+    border-radius: 20px;
+    border: 1px solid rgba(62, 14, 1, 0.501);
+}
     
     @keyframes gradient {
         0% {
@@ -43,18 +64,37 @@ body{/*
 }
 .imgl{
     display: flex;
+    justify-content: space-between;
     width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+   
        
 }
 
 .frase{     
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     padding-left: 25px;
     font-size: 20px;
     font-weight: 100;
     font-family: 'Open Sans', 'Pacifico', 'ZCOOL QingKe HuangYou', cursive;
     text-align: center;
+    align-items: center;
+    position: unset;
 }
-
+.emojis{
+    
+   display: flex;
+   flex-direction: row;
+justify-content: space-around;
+position: unset;
+margin-left: 15px;
+margin-right: 20px;
+   
+}
 a{
    text-decoration: none;
    padding: 5px 10px 5px 10px;
@@ -68,32 +108,104 @@ a{
 a:hover{
     background-color: pink;
 }
-
-.vidro{
-    border-radius: 0 20px 0 20px;   
-    display: flex;
-    justify-content: center;
+/*Centraliza item dentro do main*/
+main{
+    display: grid;
+    place-items: center;
     
 }
 
-.menu{
+.wrapper{
+    width: 100vw;
     
+}
+/*scroll wrapper*/
+.vidro::-webkit-scrollbar{
+    width: 15px;
+}
+
+.vidro::-webkit-scrollbar-track{
+    background: rgba(165, 42, 42, 0);
+}
+
+.vidro::-webkit-scrollbar-thumb{
+    background-color: pink;
+    border-radius: 20px;
+    border: 1px solid rgba(62, 14, 1, 0.501);
+}
+/*fim scroll wrapper*/
+
+.vidro{
+    
+    /*border-radius: 0 20px 0 20px;*/   
+    display: flex;
+    /*justify-content: center;*/
+    overflow-x: auto;
+    /*border: solid black;*/
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+    
+    
+}
+
+.item{
+    flex: none; /*mantém o tamanho do card sempre o mesmo*/
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    
+}
+
+.menu{    
+   
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    /*width: 350px;
+    height: 480px;*/
     margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 50px;
+    border-radius: 10px;    
     background-color: transparent;
     color: rgb(0, 0, 0);
     box-shadow: 0 4px 16px 0 rgb(27, 12, 0);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     border: 1px solid rgba(255, 255, 255, 0.18);
+
 }
 
+h1{
+    text-align: center;
+}
+
+
+
 select{
+    padding: 4px;
     background-color: transparent;
     border-radius: 10px;
     border: 3px solid rgba(255, 255, 255, 0.18);;
 
+}
+.seta{
+    background: transparent;
+    border: none;
+    place-items: center;
+    
+    
+   
+    
+}
+.seta:hover{
+    cursor: pointer;
+   
+}
+p{
+    padding: 2px;
 }
 .fundoResumo{
     display: flex;
@@ -125,6 +237,7 @@ input{
     
     display: flex;
     justify-content: center;
+   
 }
 
 #btn{

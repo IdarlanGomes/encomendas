@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,19 @@
     <title>Faça sua Encomenda</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="imgl">
-        <img src="img/logo2.png" alt="logo"><div class="frase"><p>
-            "Que a nossa doçura seja contagiante!!"</p><p>🥰 🎂 🍰 🧁 🥧 🍫 🍭 🍮</p></div>
-          </div> 
+        <img src="img/logo2.png" alt="logo">
+        <div class="frase">
+            <p>"Que a nossa doçura seja contagiante!!"</p>
+
+            <p class="emojis">🥰 🎂 🍰 🧁 🥧 🍫 🍭 🍮</p>
+        </div>
+    </div>
     <header>
-        
-        <div class="container0">           
+
+        <div class="container0">
             <nav>
                 <a href="#">Início</a>
                 <a href="#">Fotos</a>
@@ -23,82 +29,210 @@
             </nav>
         </div>
     </header>
-    
+
     <main>
-        <div class="vidro"><div class="menu">
-    <h1>Bolos & Tortas 🥳</h1>
+        <div class="wrapper">
+            <div class="vidro">
 
-    <p>Selecione a massa do bolo:</p>
+                <!--DOCINHOS-->
+                <div class="item">
+                    <div class="menu">
+                        <h1>Docinhos 🧁</h1>
 
-    <select name="massa" id="massa"> <!--getElementByid-->
+                        <p>Beijinho:</p>
 
-        <option value="valor1">Pão de ló tradicional</option>
-        <option value="valor2">Pão de ló de chocolate</option>
+                        <select name="massa" id="massa">
+                            <!--getElementByid-->
 
-    </select>
-    
-    <p>Selecione o recheio do bolo:</p>
+                            <option value="valor1">Pão de ló tradicional</option>
+                            <option value="valor2">Pão de ló de chocolate</option>
 
-    <select name="recheio" id="recheio">
+                        </select>
 
-        <option value="valor3">Morango</option>
-        <option value="valor4">Chocolate</option>
-        <option value="valor5">Abacaxi com coco</option>
-        <option value="valor6">Ninho com Morango</option>
-        <option value="valor7">Brigadeiro</option>
+                        <p>Brigadeiro:</p>
 
-    </select>
+                        <select name="recheio" id="recheio">
 
-    <p>Selecione a cobertura do bolo:</p>
+                            <option value="valor3">Morango</option>
+                            <option value="valor4">Chocolate</option>
+                            <option value="valor5">Abacaxi com coco</option>
+                            <option value="valor6">Ninho com Morango</option>
+                            <option value="valor7">Brigadeiro</option>
 
-    <select name="cobertura" id="cobertura">
+                        </select>
 
-        <option value="valor8">Chocolate</option>
-        <option value="valor9">Morango</option>
-        <option value="valor10">Chantininho</option>
-        <option value="valor11">Ganache</option>
+                        <p>Bombom:</p>
 
-    </select>
+                        <select name="cobertura" id="cobertura">
 
-    <p>Selecione a decoração do bolo:</p>
+                            <option value="valor8">Chocolate</option>
+                            <option value="valor9">Morango</option>
+                            <option value="valor10">Chantininho</option>
+                            <option value="valor11">Ganache</option>
 
-    <select name="decoração" id="decoração">
+                        </select>
 
-        <option value="valor12">Flores naturais</option>
-        <option value="valor13">Topo personalizado</option>
-        <option value="valor14">Decoração lisa</option>
-        <option value="valor15">Decoração com ondas</option>
+                        <p>Olho de sogra:</p>
 
-    </select>
-</div>
-</div>
+                        <select name="decoração" id="decoração">
 
-    <div class="fundoResumo"><div class="fixa"><div class="resumo">
-    <h2>Resumo:</h2>
+                            <option value="valor12">Flores naturais</option>
+                            <option value="valor13">Topo personalizado</option>
+                            <option value="valor14">Decoração lisa</option>
+                            <option value="valor15">Decoração com ondas</option>
 
-    <input disabled type="text" id="selecionado"></input>
-    <br>
-    <input disabled type="text" id="selecionado2"></input>
-    <br>
-    <input disabled type="text" id="selecionado3"></input>
-    <br>
-    <input disabled type="text" id="selecionado4"></input>
-</div>
-</div></div>
+                        </select>
+                    </div>
+                </div>
+                <!--FIM DOCINHOS-->
 
-    <br>
+                <!--BOLOS-->
 
-    <div class="botao">
-        <button id="btn">Enviar Pedido</button>
-    </div>
+                <div class="item">
+                    <div class="menu">
+                        <h1>Bolos/Tortas 🥳</h1>
 
+                        <p>Selecione a massa do bolo:</p>
+
+                        <select name="massa" id="massa">
+                            <!--getElementByid-->
+
+                            <option value="valor1">Pão de ló tradicional</option>
+                            <option value="valor2">Pão de ló de chocolate</option>
+
+                        </select>
+
+                        <p>Selecione o recheio do bolo:</p>
+
+                        <select name="recheio" id="recheio">
+
+                            <option value="valor3">Morango</option>
+                            <option value="valor4">Chocolate</option>
+                            <option value="valor5">Abacaxi com coco</option>
+                            <option value="valor6">Ninho com Morango</option>
+                            <option value="valor7">Brigadeiro</option>
+
+                        </select>
+
+                        <p>Selecione a cobertura do bolo:</p>
+
+                        <select name="cobertura" id="cobertura">
+
+                            <option value="valor8">Chocolate</option>
+                            <option value="valor9">Morango</option>
+                            <option value="valor10">Chantininho</option>
+                            <option value="valor11">Ganache</option>
+
+                        </select>
+
+                        <p>Selecione a decoração do bolo:</p>
+
+                        <select name="decoração" id="decoração">
+
+                            <option value="valor12">Flores naturais</option>
+                            <option value="valor13">Topo personalizado</option>
+                            <option value="valor14">Decoração lisa</option>
+                            <option value="valor15">Decoração com ondas</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <!--FIM BOLOS-->
+
+                <!--SOBREMESAS-->
+
+                <div class="item">
+                    <div class="menu">
+                        <h1>Sobremesas 🍮</h1>
+
+                        <p>Pudim Tradicional:</p>
+
+                        <select name="massa" id="massa">
+                            <!--getElementByid-->
+
+                            <option value="valor1">Pão de ló tradicional</option>
+                            <option value="valor2">Pão de ló de chocolate</option>
+
+                        </select>
+
+                        <p>Torta na Taça:</p>
+
+                        <select name="recheio" id="recheio">
+
+                            <option value="valor3">Morango</option>
+                            <option value="valor4">Chocolate</option>
+                            <option value="valor5">Abacaxi com coco</option>
+                            <option value="valor6">Ninho com Morango</option>
+                            <option value="valor7">Brigadeiro</option>
+
+                        </select>
+
+                        <p>Banoffe:</p>
+
+                        <select name="cobertura" id="cobertura">
+
+                            <option value="valor8">Chocolate</option>
+                            <option value="valor9">Morango</option>
+                            <option value="valor10">Chantininho</option>
+                            <option value="valor11">Ganache</option>
+
+                        </select>
+
+                        <p>Uvoffe:</p>
+
+                        <select name="decoração" id="decoração">
+
+                            <option value="valor12">Flores naturais</option>
+                            <option value="valor13">Topo personalizado</option>
+                            <option value="valor14">Decoração lisa</option>
+                            <option value="valor15">Decoração com ondas</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <!--FIM SOBREMESAS-->
+
+            </div>
+
+
+        </div>
+        <div class="setas">
+            <button onclick="scrollWin(100, 0)" class="seta"><img src="img/esq.png" alt="esquerda"></button>
+            <button onclick="scrollWin(-100, 0)" class="seta"><img src="img/dir.png" alt="direita"></button>
+
+        </div>
+        <div class="fundoResumo">
+            <div class="fixa">
+                <div class="resumo">
+                    <h2>Resumo:</h2>
+
+                    <input disabled type="text" id="selecionado"></input>
+                    <br>
+                    <input disabled type="text" id="selecionado2"></input>
+                    <br>
+                    <input disabled type="text" id="selecionado3"></input>
+                    <br>
+                    <input disabled type="text" id="selecionado4"></input>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="botao">
+            <button id="btn">Enviar Pedido</button>
+        </div>
+        
     </main>
 
     <footer>
-        <p>Dúvidas?! Entre em contato já! WhatsApp: (62) 98271-4110 | E-mail: deliciasdarahgo@gmail.com </p>     
+        <p>Dúvidas?! Entre em contato já! WhatsApp: (62) 98271-4110 | E-mail: deliciasdarahgo@gmail.com </p>
     </footer>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>

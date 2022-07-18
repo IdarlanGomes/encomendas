@@ -1,62 +1,70 @@
 //MASSA
 
-document.getElementById("massa").onchange = function(){update()};
 
-function update(){
 
-let massa = document.getElementById("massa");   
-let opcao = massa.options[massa.selectedIndex];
+document.getElementById("massa").onchange = function () { update() };
 
-document.getElementById("selecionado").value = "*MASSA*: " + opcao.text + ".";
+function update() {
+
+    let massa = document.getElementById("massa");
+    let opcao = massa.options[massa.selectedIndex];
+
+    document.getElementById("selecionado").value = "*MASSA*: " + opcao.text + ".";
 }
 update();
 
 //RECHEIO
 
-document.getElementById("recheio").onchange = function(){update2()};
+document.getElementById("recheio").onchange = function () { update2() };
 
-function update2(){
+function update2() {
 
-let recheio = document.getElementById("recheio");   
-let opcao2 = recheio.options[recheio.selectedIndex];
+    let recheio = document.getElementById("recheio");
+    let opcao2 = recheio.options[recheio.selectedIndex];
 
-document.getElementById("selecionado2").value = "*RECHEIO*: " + opcao2.text + ".";
+    document.getElementById("selecionado2").value = "*RECHEIO*: " + opcao2.text + ".";
 }
 update2();
 
 //COBERTURA
 
-document.getElementById("cobertura").onchange = function(){update3()};
+document.getElementById("cobertura").onchange = function () { update3() };
 
-function update3(){
+function update3() {
 
-let cobertura = document.getElementById("cobertura");   
-let opcao3 = cobertura.options[cobertura.selectedIndex];
+    let cobertura = document.getElementById("cobertura");
+    let opcao3 = cobertura.options[cobertura.selectedIndex];
 
-document.getElementById("selecionado3").value = "*COBERTURA*: " + opcao3.text + ".";
+    document.getElementById("selecionado3").value = "*COBERTURA*: " + opcao3.text + ".";
 }
 update3();
 
 //DECORAÇÃO
 
-document.getElementById("decoração").onchange = function(){update4()};
+document.getElementById("decoração").onchange = function () { update4() };
 
-function update4(){
+function update4() {
 
-let decoração = document.getElementById("decoração");   
-let opcao4 = decoração.options[decoração.selectedIndex];
+    let decoração = document.getElementById("decoração");
+    let opcao4 = decoração.options[decoração.selectedIndex];
 
-document.getElementById("selecionado4").value = "*DECORAÇÃO*: " + opcao4.text + ".";
+    document.getElementById("selecionado4").value = "*DECORAÇÃO*: " + opcao4.text + ".";
 }
 update4();
 
 //BOTÃO ENVIAR
 
-document.getElementById("btn").onclick = function(){enviar()};
+document.getElementById("btn").onclick = function () { enviar() };
 
-function enviar(){
+function enviar() {
 
-    window.open('https://api.whatsapp.com/send?phone=5562982714110&text=' + "Olá, gostaria de fazer uma *ENCOMENDA*! " + document.getElementById("selecionado").value + " " + document.getElementById("selecionado2").value + " " + document.getElementById("selecionado3").value + " " + document.getElementById("selecionado4").value +'', '_blank');
-    
+    window.open('https://api.whatsapp.com/send?phone=5562982714110&text=' + "Olá, gostaria de fazer uma *ENCOMENDA*! " + document.getElementById("selecionado").value + " " + document.getElementById("selecionado2").value + " " + document.getElementById("selecionado3").value + " " + document.getElementById("selecionado4").value + '', '_blank');
+
     //alert(document.getElementById("selecionado4").value + "\n" + document.getElementById("selecionado3").value + "\n" + document.getElementById("selecionado2").value + "\n" + document.getElementById("selecionado").value) //ISSO FUNCIONA!
+}
+
+
+
+function scrollWin (x, y){
+   document.getElementById("item").scrollBy(x, y);
 }
