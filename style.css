@@ -43,6 +43,7 @@ body{/*
 }
 .imgl{
     display: flex;
+    width: 100%;
        
 }
 
