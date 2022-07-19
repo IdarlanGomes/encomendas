@@ -32,11 +32,11 @@
 
     <main>
         <div class="wrapper">
-            <div class="vidro">
+            <div id="vidro">
 
                 <!--DOCINHOS-->
                 <div class="item">
-                    <div class="menu">
+                    <div class="menu" id="menuDoces">
                         <h1>Docinhos 🧁</h1>
 
                         <p>Beijinho:</p>
@@ -89,7 +89,7 @@
                 <!--BOLOS-->
 
                 <div class="item">
-                    <div class="menu">
+                    <div class="menu" id="menuBolos">
                         <h1>Bolos/Tortas 🥳</h1>
 
                         <p>Selecione a massa do bolo:</p>
@@ -143,7 +143,7 @@
                 <!--SOBREMESAS-->
 
                 <div class="item">
-                    <div class="menu">
+                    <div class="menu" id="menuSobremesas">
                         <h1>Sobremesas 🍮</h1>
 
                         <p>Pudim Tradicional:</p>
@@ -198,9 +198,13 @@
 
 
         </div>
-        <div class="setas">
-            <button onclick="scrollWin(100, 0)" class="seta"><img src="img/esq.png" alt="esquerda"></button>
-            <button onclick="scrollWin(-100, 0)" class="seta"><img src="img/dir.png" alt="direita"></button>
+        <div id="setas">
+           <!--<button id="setaEsq" type="button" ><img src="img/esq.png" alt="esquerda"></button>-->
+           <a id="linkSlide" href="index.html#menuDoces"></a>
+           <a id="linkSlide" href="index.html#menuBolos"></a>
+           <a id="linkSlide" href="index.html#menuSobremesas"></a>
+
+            <!--<button id="setaDir" type="button" ><img src="img/dir.png" alt="direita"></button>-->
 
         </div>
         <div class="fundoResumo">

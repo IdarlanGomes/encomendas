@@ -64,7 +64,15 @@ function enviar() {
 }
 
 
+/* Dá certo, mas não é fluido...
+const button = document.getElementById("setaEsq");
 
-function scrollWin (x, y){
-   document.getElementById("item").scrollBy(x, y);
-}
+button.onclick = function () {
+    document.getElementById("vidro").scrollLeft -= 800;
+};
+
+const button2 = document.getElementById("setaDir");
+
+button2.onclick = function () {
+    document.getElementById("vidro").scrollLeft += 800;
+};*/

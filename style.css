@@ -120,28 +120,27 @@ main{
     
 }
 /*scroll wrapper*/
-.vidro::-webkit-scrollbar{
+#vidro::-webkit-scrollbar{
     width: 15px;
 }
 
-.vidro::-webkit-scrollbar-track{
+#vidro::-webkit-scrollbar-track{
     background: rgba(165, 42, 42, 0);
 }
 
-.vidro::-webkit-scrollbar-thumb{
+#vidro::-webkit-scrollbar-thumb{
     background-color: pink;
     border-radius: 20px;
     border: 1px solid rgba(62, 14, 1, 0.501);
 }
 /*fim scroll wrapper*/
 
-.vidro{
+#vidro{
     
     /*border-radius: 0 20px 0 20px;*/   
     display: flex;
     /*justify-content: center;*/
-    overflow-x: auto;
-    /*border: solid black;*/
+    overflow-x: auto;    
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     
@@ -167,7 +166,7 @@ main{
     /*width: 350px;
     height: 480px;*/
     margin: 10px;
-    padding: 50px;
+    padding: 0;
     border-radius: 10px;    
     background-color: transparent;
     color: rgb(0, 0, 0);
@@ -180,6 +179,7 @@ main{
 
 h1{
     text-align: center;
+        
 }
 
 
@@ -191,7 +191,25 @@ select{
     border: 3px solid rgba(255, 255, 255, 0.18);;
 
 }
-.seta{
+
+#linkSlide{
+    padding: 10px;
+    margin-top: 25px;
+    flex: none;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+}
+#linkSlide:hover{
+    background-color: orange;
+
+}
+
+#setas{
+    display: flex;
+}
+
+/*
+#setaEsq{
     background: transparent;
     border: none;
     place-items: center;
@@ -200,10 +218,23 @@ select{
    
     
 }
-.seta:hover{
+#setaEsq:hover{
     cursor: pointer;
    
 }
+#setaDir{
+    background: transparent;
+    border: none;
+    place-items: center;
+    
+    
+   
+    
+}
+#setaDir:hover{
+    cursor: pointer;
+   
+}*/
 p{
     padding: 2px;
 }
