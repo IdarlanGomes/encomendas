@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 *{
-    margin: 0px; padding: 0; box-sizing: border-box;
+    margin: 0; padding: 0; box-sizing: border-box;
 }
 
 body{/*
@@ -15,11 +15,8 @@ body{/*
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
         height: 100vh;
-        font-family: 'Open Sans', sans-serif;
-
-        
+        font-family: 'Open Sans', sans-serif; 
     }
-
 body::-webkit-scrollbar{
     width: 15px;
 }
@@ -46,32 +43,26 @@ body::-webkit-scrollbar-thumb{
         }
     
 }
-
 .container0{
     
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    margin: 10px;
+    justify-content: space-around;    
     padding: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18) ;
     border-radius: 10px;
     background-color: rgba(224, 159, 184, 0.694);
-    position: unset;
-    
-
+   
 }
-.imgl{
+#imgl{
+    background-color: rgba(216, 112, 147, 0.886);
+    border-radius: 10px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin-top: 20px;
-    margin-left: 20px;
-   
-       
+    margin: 20px 10px 20px 10px;  
 }
-
 .frase{     
     
     display: flex;
@@ -95,19 +86,8 @@ margin-left: 15px;
 margin-right: 20px;
    
 }
-a{
-   text-decoration: none;
-   padding: 5px 10px 5px 10px;
-   margin: 1px;
-   border-radius: 50px;
-   background-color: rgb(255, 166, 0);
-   color: brown;
 
-}
 
-a:hover{
-    background-color: pink;
-}
 /*Centraliza item dentro do main*/
 main{
     display: grid;
@@ -116,7 +96,7 @@ main{
 }
 
 .wrapper{
-    width: 100vw;
+    max-width: 400px;
     
 }
 /*scroll wrapper*/
@@ -143,6 +123,7 @@ main{
     overflow-x: auto;    
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    margin: 0;
     
     
     
@@ -159,18 +140,21 @@ main{
 .menu{    
    
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 350px;
+    
     text-align: center;
     justify-content: center;
     /*width: 350px;
     height: 480px;*/
     margin: 10px;
-    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px;
+    padding-top: 20px;
     border-radius: 10px;    
     background-color: transparent;
     color: rgb(0, 0, 0);
-    box-shadow: 0 4px 16px 0 rgb(27, 12, 0);
+    box-shadow: 0 2px 10px 0 rgb(27, 12, 0);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -179,6 +163,7 @@ main{
 
 h1{
     text-align: center;
+    margin-bottom: 10px;
         
 }
 
@@ -193,19 +178,27 @@ select{
 }
 
 #linkSlide{
+    text-decoration: none;
+    border-radius: 50px;
     padding: 10px;
     margin-top: 25px;
     flex: none;
     flex-direction: column;
-    background-color: rgb(0, 0, 0);
+    background-color: orange;
 }
 #linkSlide:hover{
-    background-color: orange;
+    background-color: pink;
+   
+
 
 }
+
+
 
 #setas{
     display: flex;
+    margin: 0;
+    padding: 15px;
 }
 
 /*
@@ -243,8 +236,7 @@ p{
     justify-content: center;
 }
 .resumo{  
-    text-align: center;
-    size: 10px 50px;
+    text-align: center;    
     margin: 10px;
     padding: 10px;    
     border: 1px solid rgba(255, 255, 255, 0.18);
