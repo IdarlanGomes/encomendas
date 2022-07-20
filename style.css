@@ -200,11 +200,13 @@ select{
     margin: 0;
     padding: 15px;
 }
+#setasBaixo a.active a,
 
 #setasBaixo{
     display: flex;
     margin: 0;
     padding: 15px;
+   
     
 }
 #linkSlideBaixo{
@@ -223,6 +225,10 @@ select{
     background-color: pink;  
 
 }
+
+
+
+
 
 /*
 #setaEsq{
