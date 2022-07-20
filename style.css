@@ -148,6 +148,7 @@ main{
    
     object-fit: cover;
     width: 350px;
+    height: 462px;
     
     text-align: center;
     justify-content: center;
@@ -168,6 +169,15 @@ main{
 
 }
 
+#qtd{
+    padding: 4px;
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    width: 170px;
+
+}
+
 h1{
     text-align: center;
     margin-bottom: 10px;
@@ -178,7 +188,7 @@ h1{
 
 select{
     padding: 4px;
-    background-color: transparent;
+    background-color: white;
     border-radius: 10px;
     border: 3px solid rgba(255, 255, 255, 0.18);
 
