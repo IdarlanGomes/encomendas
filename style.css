@@ -200,63 +200,38 @@ select{
     margin: 0;
     padding: 15px;
 }
-#setasBaixo a.active a,
+
 
 #setasBaixo{
+    
     display: flex;
-    margin: 0;
-    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;   
+   
    
     
 }
-#linkSlideBaixo{
-    text-decoration: none;
-    border-radius: 50px;
-    padding: 10px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 40px;
-    margin-right: 40px;
-    flex: none;
-    flex-direction: column;
-    background-color: orange;
-}
-#linkSlideBaixo:hover{
-    background-color: rgba(61, 13, 1, 0.957);  
 
-}
-
-
-
-
-
-/*
-#setaEsq{
-    background: transparent;
-    border: none;
-    place-items: center;
-    
+#setasBaixo button{
     
    
-    
-}
-#setaEsq:hover{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;   
+    border-radius: 20px;
     cursor: pointer;
-   
-}
-#setaDir{
-    background: transparent;
     border: none;
-    place-items: center;
-    
+    font-size: 50px;
+    background-color: brown;
+    color: pink;
     
    
     
 }
-#setaDir:hover{
-    cursor: pointer;
-   
-}*/
+
+
+
 p{
     padding: 2px;
 }

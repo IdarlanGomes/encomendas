@@ -63,7 +63,19 @@ function enviar() {
     //alert(document.getElementById("selecionado4").value + "\n" + document.getElementById("selecionado3").value + "\n" + document.getElementById("selecionado2").value + "\n" + document.getElementById("selecionado").value) //ISSO FUNCIONA!
 }
 
+document.getElementById("rolarDir").onclick = function () {
+    rolarDir ()};
+var vidro = document.getElementById("vidro")
+function rolarDir () {
+vidro.scrollBy(-10, 0);
+}
 
+document.getElementById("rolarEsq").onclick = function () {
+    rolarEsq ()};
+var vidro = document.getElementById("vidro")
+function rolarEsq () {
+vidro.scrollBy(10, 0);
+}
 
 /* Dá certo, mas não é fluido...
 const button = document.getElementById("setaEsq");
