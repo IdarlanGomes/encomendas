@@ -16,6 +16,7 @@ body{/*
         animation: gradient 15s ease infinite;
         height: 100vh;
         font-family: 'Open Sans', sans-serif; 
+        
     }
 body::-webkit-scrollbar{
     width: 15px;
@@ -56,12 +57,18 @@ body::-webkit-scrollbar-thumb{
    
 }
 #imgl{
-    background-color: rgba(216, 112, 147, 0.886);
+    border: 2px solid rgb(248, 97, 122);
     border-radius: 10px;
     padding: 5px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 20px 10px 20px 10px;  
+}
+#logoRah{
+    flex: none;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .frase{     
     
@@ -173,7 +180,7 @@ select{
     padding: 4px;
     background-color: transparent;
     border-radius: 10px;
-    border: 3px solid rgba(255, 255, 255, 0.18);;
+    border: 3px solid rgba(255, 255, 255, 0.18);
 
 }
 
@@ -218,19 +225,24 @@ select{
    
     margin-left: 20px;
     margin-right: 20px;
-    padding: 10px;   
+    padding: 20px;   
     border-radius: 20px;
     cursor: pointer;
     border: none;
-    font-size: 50px;
-    background-color: brown;
+    display: flex;
+    background-color: rgb(165, 61, 42);
     color: pink;
+    font-weight: 900;
+    font-size: large; 
     
    
     
 }
 
-
+#setasBaixo button:hover{
+    background-color: rgb(248, 97, 122);
+    
+}
 
 p{
     padding: 2px;
