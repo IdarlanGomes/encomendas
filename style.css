@@ -169,7 +169,7 @@ main{
 
 }
 
-#qtd{
+.qtd{
     padding: 4px;
     background-color: white;
     border-radius: 10px;
@@ -177,6 +177,17 @@ main{
     width: 170px;
 
 }
+
+#qtdOlhoSogra{
+    background-color: rgba(221, 242, 32, 0.915);
+}
+h6{
+    background-color: yellow;
+    width: 45px;
+    margin: auto;
+    border-radius: 20px;
+}
+
 
 h1{
     text-align: center;
