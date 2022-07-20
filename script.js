@@ -64,6 +64,7 @@ function enviar() {
 }
 
 
+
 /* Dá certo, mas não é fluido...
 const button = document.getElementById("setaEsq");
 
